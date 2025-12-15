@@ -1,0 +1,16 @@
+{
+  "name": "html-tasks",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Практическое занятие №10 - Деплой сайта",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run copy-assets",
+    "copy-assets": "node -e \"const fs=require('fs');if(fs.existsSync('images')){fs.cpSync('images','dist/images',{recursive:true,force:true})}\"",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
+

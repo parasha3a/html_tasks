@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Практическое занятие по деплою сайта. Демонстрация адаптивного веб-сайта с оптимизацией.">
+    <meta name="keywords" content="деплой, веб-разработка, адаптивный дизайн, GitHub Pages">
+    <meta property="og:title" content="Практическое занятие №10 - Деплой сайта">
+    <meta property="og:description" content="Демонстрация процесса деплоя веб-сайта">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Практическое занятие №10 - Деплой сайта">
+    <title>Практическое занятие №10 - Деплой сайта</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <h1 class="logo">Мой Сайт</h1>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 class="hero-title">Добро пожаловать на наш сайт</h2>
+                <p class="hero-text">Это демонстрационный сайт для практического занятия по деплою</p>
+                <button class="btn btn-primary" id="cta-btn">Начать работу</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О нас</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Мы занимаемся созданием современных веб-сайтов с использованием лучших практик разработки.</p>
+                        <p>Наш сайт полностью адаптивен и оптимизирован для всех устройств.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/placeholder.webp" alt="О нас" loading="lazy" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Веб-разработка</h3>
+                        <p>Создание современных и функциональных веб-сайтов</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Адаптивный дизайн</h3>
+                        <p>Сайты, которые отлично выглядят на всех устройствах</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Оптимизация</h3>
+                        <p>Повышение скорости загрузки и производительности</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Мой Сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <h3>Спасибо за интерес!</h3>
+            <p>Ваше сообщение было отправлено успешно.</p>
+        </div>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
+
